@@ -10,6 +10,7 @@ struct Students {
     int studentsNum = 0;
     int goodStudentsNum = 0;
 };
+//test
 
 int flag = 0, num, N, lineNum, pointNum, studCount = 0, gStudCount = 0;
 //float percent;
