@@ -169,33 +169,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-students.obj: students.cpp.obj
-
-.PHONY : students.obj
-
-# target to build an object file
-students.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/students.cpp.obj
-.PHONY : students.cpp.obj
-
-students.i: students.cpp.i
-
-.PHONY : students.i
-
-# target to preprocess a source file
-students.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/students.cpp.i
-.PHONY : students.cpp.i
-
-students.s: students.cpp.s
-
-.PHONY : students.s
-
-# target to generate assembly for a file
-students.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/students.cpp.s
-.PHONY : students.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -208,9 +181,6 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... students.obj
-	@echo ... students.i
-	@echo ... students.s
 .PHONY : help
 
 
