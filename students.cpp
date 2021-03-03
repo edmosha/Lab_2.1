@@ -2,7 +2,7 @@
 
 
 void MENU () {
-    while (num != 5) {
+    while (num != 6) {
         cout << "\n<----Меню---->" << endl;
         cout << "1 > Чтение файла" << endl;
         cout << "2 > Вывод данных" << endl;
@@ -10,12 +10,21 @@ void MENU () {
         cout << "4 > Процент успевающих студентов" << endl;
         cout << "5 > Сохранение результата в новый файл" << endl;
         cout << "6 > Завершить" << endl;
-        cout << "Сделай свой выбор!!!!" << endl;
+        cout << "> > Сделай свой выбор!!!!" << endl;
         cin >> num;
         switch (num) {
             case 1: {
                 cout << "Сколько строк следует прочитать?" << endl;
-                cin >> N;
+//                for (int i=0; i<N; i++) {
+//                    cout << "\nГруппа: ";
+//                    cin >> S[i].name;
+//                    cout << "\nФакультет: ";
+//                    cin >> S[i].faculty;
+//                    cout << "\nКол-во студентов: ";
+//                    cin >> S[i].studentsNum;
+//                    cout << "\nХорошистов: ";
+//                    cin >> S[i].goodStudentsNum;
+//                }
                 flag = Read(S, N);
                 if(flag != 1) exit(1);
             }break;
@@ -60,8 +69,10 @@ void MENU () {
 };
 
 int Read (Students *S, int n) {   // Указатель на массив, n - кол-во элементов массива
+    cout << "я началь";
     ifstream reader;
-    reader.open("students.txt"); //открываем файл для чтения
+    reader.open("C:\\Users\\Edmosha\\CLionProjects\\lab_2.1\\students.txt"); //открываем файл для чтения
+    cout << "я сделаль";
     if(reader) {
         for (int i=0; i<n; i++) {
             reader >> S[i].name >> S[i].faculty >> S[i].studentsNum >> S[i].goodStudentsNum;
@@ -70,6 +81,9 @@ int Read (Students *S, int n) {   // Указатель на массив, n - �
         cout << "Файл не прочитан." << endl;
     }
     reader.close();
+    if (reader.is_open()) {
+        cout << "Файл робит ты дебилка";
+    }
     return 1;
 }
 

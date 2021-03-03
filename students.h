@@ -8,7 +8,7 @@ using namespace std;
 struct Students {
     string name = "empty_name";
     string faculty = "empty_faculty";
-    int studentsNum = 0;
+    float studentsNum = 0;
     int goodStudentsNum = 0;
 };
 //test

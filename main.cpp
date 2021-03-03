@@ -1,4 +1,4 @@
-#include "students.cpp"
+#include "students.h"
 
 int main() {
     system("chcp 65001");
