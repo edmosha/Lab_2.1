@@ -137,11 +137,11 @@ void Write (Students *S, int n) {
     writer.open(newFileName); // открываем/создаем файл для записи
     if (writer.is_open()) {
         cout << "Файл " << newFileName << " создан.";
-        writer << "< < < < Строки > > > >" << endl;
+        writer << "> Строки" << endl << endl;
         for (int i=0; i<n; i++) {
             writer << S[i].name << " " << S[i].faculty << " " << S[i].studentsNum << " " << S[i].goodStudentsNum << endl;
         }
-        writer << "< < < < Процент успевающих студентов > > > >" << endl;
+        writer << "\n> Процент успевающих студентов: " ;
         writer << percent << "%" << endl;
     } else {
         cout << "Ошибка создания файла.";
