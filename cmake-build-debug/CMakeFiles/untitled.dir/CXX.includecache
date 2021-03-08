@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Edmosha/CLionProjects/lab_2.1/main.cpp
-students.h
-C:/Users/Edmosha/CLionProjects/lab_2.1/students.h
-
-C:/Users/Edmosha/CLionProjects/lab_2.1/students.h
+C:/Users/Edmosha/CLionProjects/lab_2.1/Header/students.h
 iostream
--
-string
 -
 fstream
 -
+string
+-
+
+C:/Users/Edmosha/CLionProjects/lab_2.1/Source/students.cpp
+../Header/students.h
+C:/Users/Edmosha/CLionProjects/lab_2.1/Header/students.h
 

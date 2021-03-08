@@ -142,32 +142,59 @@ untitled/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/build
 .PHONY : untitled/fast
 
-main.obj: main.cpp.obj
+Source/main.obj: Source/main.cpp.obj
 
-.PHONY : main.obj
+.PHONY : Source/main.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+Source/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Source/main.cpp.obj
+.PHONY : Source/main.cpp.obj
 
-main.i: main.cpp.i
+Source/main.i: Source/main.cpp.i
 
-.PHONY : main.i
+.PHONY : Source/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.cpp.i
-.PHONY : main.cpp.i
+Source/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Source/main.cpp.i
+.PHONY : Source/main.cpp.i
 
-main.s: main.cpp.s
+Source/main.s: Source/main.cpp.s
 
-.PHONY : main.s
+.PHONY : Source/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.cpp.s
-.PHONY : main.cpp.s
+Source/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Source/main.cpp.s
+.PHONY : Source/main.cpp.s
+
+Source/students.obj: Source/students.cpp.obj
+
+.PHONY : Source/students.obj
+
+# target to build an object file
+Source/students.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Source/students.cpp.obj
+.PHONY : Source/students.cpp.obj
+
+Source/students.i: Source/students.cpp.i
+
+.PHONY : Source/students.i
+
+# target to preprocess a source file
+Source/students.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Source/students.cpp.i
+.PHONY : Source/students.cpp.i
+
+Source/students.s: Source/students.cpp.s
+
+.PHONY : Source/students.s
+
+# target to generate assembly for a file
+Source/students.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Source/students.cpp.s
+.PHONY : Source/students.cpp.s
 
 # Help Target
 help:
@@ -178,9 +205,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... untitled
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... Source/main.obj
+	@echo ... Source/main.i
+	@echo ... Source/main.s
+	@echo ... Source/students.obj
+	@echo ... Source/students.i
+	@echo ... Source/students.s
 .PHONY : help
 
 
